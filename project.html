@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/logo 1.png" type="image/webp">
+    <!-- RemixIcon 2.5 -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- Swiper CSS (kept for consistency) -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!-- Main styles (your existing stylesheet) -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Projects – Maan Electric Care (MEC)</title>
+    <style>
+        /* extra smoothness for scroll reveal — matches original about/home animations */
+        .about__img, .about__data {
+            transition: transform 0.6s ease, opacity 0.8s ease;
+        }
+        .about__img-overlay {
+            overflow: hidden;
+            border-radius: 1rem;
+        }
+        .about__img-one {
+            transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .about__img-one:hover {
+            transform: scale(1.03);
+        }
+        .section {
+            transition: opacity 0.5s;
+        }
+        .home {
+    isolation: isolate;
+}
+    </style>
+</head>
+<body>
+    <header class="header" id="header" style="overflow: hidden;">
+        <nav class="nav container">
+            <!-- updated: logo as image -->
+            <a href="index.html" class="nav__logo">
+                <img src="assets/img/logo 1.png" alt="Maan Electric Care Logo">
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="services.html" class="nav__link">Services</a></li>
+                    <li class="nav__item"><a href="project.html" class="nav__link active-link">Projects</a></li>
+                    <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+                </ul>
+                <div class="nav__dark">
+                    <span class="change-theme-name">Dark mode</span>
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
+                </div>
+                <i class="ri-close-line nav__close" id="nav-close"></i>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-function-line"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main" style="overflow: hidden;">
+        <!--==================== HERO ====================-->
+        <section class="home" id="home" style="background-image: url('assets/img/sk.webp'); background-size: cover; background-position: center; position: relative;">
+            <div class="home__container container grid" style="position: relative; z-index: 5;">
+                <div class="home__data">
+                    <span class="home__data-subtitle">Delivering excellence across Pakistan</span>
+                    <h1 class="home__data-title">Our Projects</h1>
+                </div>
+            </div>
+            <div style="position: absolute; top:0; left:0; width:100%; height:100%; background: rgba(0,0,0,0.5); z-index:1;"></div>
+        </section>
+
+        <!-- ==================== PROJECTS SECTION ==================== -->
+        <section class="about section project-block" id="project1">
+            <div class="about__container container grid">
+                <div class="about__img">
+                    <div class="about__img-overlay">
+                        <img src="assets/img/project (1).webp" alt="Faisalabad Grid Station" class="about__img-one">
+                    </div>
+                </div>
+                <div class="about__data">
+                    <h2 class="section__title about__title">Faisalabad Grid Station</h2>
+                    <p class="about__description">
+                        <strong>Location:</strong> Faisalabad, Punjab<br>
+                        <strong>Client:</strong> WAPDA<br>
+                        <strong>Scope:</strong> Complete upgrade of 132kV substation including transformer installation, HT switchgear, and protection panels.<br>
+                        <strong>Status:</strong> Completed 2024<br>
+                        <strong>Highlights:</strong> Maan Electric Care executed this project under a tight deadline, ensuring minimal downtime for the regional grid. The work involved replacing two 25 MVA transformers and installing modern numerical relays, enhancing grid reliability.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="about section project-block" id="project2">
+            <div class="about__container container grid">
+                <div class="about__data">
+                    <h2 class="section__title about__title">Sundar Industrial Estate</h2>
+                    <p class="about__description">
+                        <strong>Location:</strong> Lahore, Punjab<br>
+                        <strong>Client:</strong> Sundar Industrial Estate Management<br>
+                        <strong>Scope:</strong> Design and installation of 11kV distribution panels, underground cabling, and factory electrification for 15 industrial units.<br>
+                        <strong>Status:</strong> Ongoing (expected completion Q3 2025)<br>
+                        <strong>Highlights:</strong> This project requires coordination with multiple factories to avoid production stoppages. MEC’s team is implementing a phased approach, ensuring uninterrupted power supply during installation.
+                    </p>
+                </div>
+                <div class="about__img">
+                    <div class="about__img-overlay">
+                        <img src="assets/img/project (2).webp" alt="Sundar Industrial Estate" class="about__img-one">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about section project-block" id="project3">
+            <div class="about__container container grid">
+                <div class="about__img">
+                    <div class="about__img-overlay">
+                        <img src="assets/img/project (3).webp" alt="Gujranwala Grid" class="about__img-one">
+                    </div>
+                </div>
+                <div class="about__data">
+                    <h2 class="section__title about__title">Gujranwala Grid Transformer Replacement</h2>
+                    <p class="about__description">
+                        <strong>Location:</strong> Gujranwala, Punjab<br>
+                        <strong>Client:</strong> WAPDA / NTDC<br>
+                        <strong>Scope:</strong> Replacement of two aging 25 MVA power transformers, including associated civil works, busbar modifications, and commissioning.<br>
+                        <strong>Status:</strong> Completed 2023<br>
+                        <strong>Highlights:</strong> The project was completed ahead of schedule, restoring full capacity to the grid during peak summer months. MEC’s meticulous planning ensured zero safety incidents.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="about section project-block" id="project4">
+            <div class="about__container container grid">
+                <div class="about__data">
+                    <h2 class="section__title about__title">LDA Avenue Residential Complex</h2>
+                    <p class="about__description">
+                        <strong>Location:</strong> Lahore, Punjab<br>
+                        <strong>Client:</strong> Lahore Development Authority (LDA)<br>
+                        <strong>Scope:</strong> Complete electrical infrastructure for 500 residential units, including MV/LV distribution, street lighting, and metering.<br>
+                        <strong>Status:</strong> Completed 2024<br>
+                        <strong>Highlights:</strong> MEC coordinated with multiple contractors to synchronise electrical installation with civil works. The project received safety commendation from LDA.
+                    </p>
+                </div>
+                <div class="about__img">
+                    <div class="about__img-overlay">
+                        <img src="assets/img/services (1).webp" alt="LDA Avenue" class="about__img-one">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about section project-block" id="project5">
+            <div class="about__container container grid">
+                <div class="about__img">
+                    <div class="about__img-overlay">
+                        <img src="assets/img/services (2).webp" alt="Steel Mill Cabling" class="about__img-one">
+                    </div>
+                </div>
+                <div class="about__data">
+                    <h2 class="section__title about__title">Steel Mill Underground Cabling</h2>
+                    <p class="about__description">
+                        <strong>Location:</strong> Karachi, Sindh<br>
+                        <strong>Client:</strong> Agha Steel Industries<br>
+                        <strong>Scope:</strong> Supply and installation of 11kV underground cabling (XLPE, 300 sq.mm) between main grid and mill substations, including termination and testing.<br>
+                        <strong>Status:</strong> Ongoing<br>
+                        <strong>Highlights:</strong> The project involves trenching through an active industrial area. MEC’s HSE plan ensures worker safety and minimal disruption to mill operations.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== CONTACT / CTA with phone numbers ====================-->
+        <section class="subscribe section">
+            <div class="subscribe__bg">
+                <div class="subscribe__container container">
+                    <h2 class="section__title subscribe__title">Let’s Discuss Your Next Project</h2>
+                    <p class="subscribe__description">
+                        From grid stations to industrial complexes, Maan Electric Care delivers turnkey electrical solutions. <br>
+                        <strong style="font-size: 1.3rem; display: block; margin: 1rem 0;">
+                            <i class="ri-phone-line"></i> 0334 5051619  |  <i class="ri-whatsapp-line"></i> 0321 5177465
+                        </strong>
+                        <span>Email: khansheri28@gmail.com | info@maanelectric.com.pk</span>
+                    </p>
+                    <a href="contact.html" class="button">Contact Us Directly</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <div class="footer__content grid">
+                <div class="footer__data">
+                    <h3 class="footer__title">Maan Electric Care</h3>
+                    <p class="footer__description">WAPDA approved · Industrial & Infrastructure<br>Powering Pakistan with safety & excellence.</p>
+                    <div>
+                        <a href="#" class="footer__social"><i class="ri-facebook-box-fill"></i></a>
+                        <a href="#" class="footer__social"><i class="ri-instagram-fill"></i></a>
+                        <a href="#" class="footer__social"><i class="ri-twitter-fill"></i></a>
+                        <a href="#" class="footer__social"><i class="ri-youtube-fill"></i></a>
+                    </div>
+                </div>
+                <div class="footer__data">
+                    <h3 class="footer__subtitle">Company</h3>
+                    <ul>
+                        <li class="footer__item"><a href="about.html" class="footer__link">About Us</a></li>
+                        <li class="footer__item"><a href="index.html#services" class="footer__link">Services</a></li>
+                        <li class="footer__item"><a href="project.html" class="footer__link">Projects</a></li>
+                    </ul>
+                </div>
+                <div class="footer__data">
+                    <h3 class="footer__subtitle">Support</h3>
+                    <ul>
+                        <li class="footer__item"><a href="contact.html" class="footer__link">Contact</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer__data">
+                    <h3 class="footer__subtitle">Contact</h3>
+                    <ul style="list-style: none; padding-left: 0;">
+                        <li class="footer__item"><i class="ri-map-pin-line"></i> Lahore, Pakistan</li>
+                        <li class="footer__item"><i class="ri-phone-line"></i> 0334 5051619</li>
+                        <li class="footer__item"><i class="ri-whatsapp-line"></i> 0321 5177465</li>
+                        <li class="footer__item"><i class="ri-mail-line"></i> khansheri28@gmail.com</li>
+                        <li class="footer__item"><i class="ri-mail-line"></i> info@maanelectric.com.pk</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__rights">
+                <p class="footer__copy">&#169; 2025 Maan Electric Care (Shehzada Khan Electrical Contractors). All rights reserved.</p>
+                <div class="footer__terms">
+                    <a href="#" class="footer__terms-link">Terms & Agreements</a>
+                    <a href="#" class="footer__terms-link">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line scrollup__icon"></i>
+    </a>
+
+    <!--=============== SCRIPTS ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <!-- additional inline scroll reveal + dark mode fix + contact numbers displayed -->
+    <script>
+        (function() {
+            // ---------- DARK MODE FIX ----------
+            const themeButton = document.getElementById('theme-button');
+            const darkTheme = 'dark-theme';
+            
+            const selectedTheme = localStorage.getItem('selected-theme');
+            const selectedIcon = localStorage.getItem('selected-icon');
+            
+            if (selectedTheme) {
+                if (selectedTheme === 'dark') {
+                    document.body.classList.add(darkTheme);
+                } else {
+                    document.body.classList.remove(darkTheme);
+                }
+                if (selectedIcon === 'ri-sun-line') {
+                    themeButton.classList.add('ri-sun-line');
+                    themeButton.classList.remove('ri-moon-line');
+                } else {
+                    themeButton.classList.add('ri-moon-line');
+                    themeButton.classList.remove('ri-sun-line');
+                }
+            } else {
+                document.body.classList.remove(darkTheme);
+                themeButton.classList.add('ri-moon-line');
+                themeButton.classList.remove('ri-sun-line');
+            }
+            
+            themeButton.addEventListener('click', () => {
+                document.body.classList.toggle(darkTheme);
+                
+                if (document.body.classList.contains(darkTheme)) {
+                    themeButton.classList.add('ri-sun-line');
+                    themeButton.classList.remove('ri-moon-line');
+                } else {
+                    themeButton.classList.add('ri-moon-line');
+                    themeButton.classList.remove('ri-sun-line');
+                }
+                
+                const currentTheme = document.body.classList.contains(darkTheme) ? 'dark' : 'light';
+                const currentIcon = themeButton.classList.contains('ri-moon-line') ? 'ri-moon-line' : 'ri-sun-line';
+                localStorage.setItem('selected-theme', currentTheme);
+                localStorage.setItem('selected-icon', currentIcon);
+            });
+            
+            // ---------- SCROLL REVEAL ----------
+            if (typeof ScrollReveal !== 'undefined') {
+                const sr = ScrollReveal({
+                    origin: 'top',
+                    distance: '60px',
+                    duration: 1000,
+                    delay: 200,
+                    reset: false
+                });
+
+                const projectBlocks = document.querySelectorAll('.project-block');
+                projectBlocks.forEach((block, index) => {
+                    const img = block.querySelector('.about__img');
+                    const data = block.querySelector('.about__data');
+                    if (img) {
+                        sr.reveal(img, {
+                            origin: 'left',
+                            interval: 100,
+                            delay: 200 + (index * 100)
+                        });
+                    }
+                    if (data) {
+                        sr.reveal(data, {
+                            origin: 'right',
+                            interval: 100,
+                            delay: 300 + (index * 100)
+                        });
+                    }
+                });
+                sr.reveal('.subscribe__bg', { origin: 'bottom', interval: 100 });
+                sr.reveal('.footer__content', { origin: 'bottom', interval: 100 });
+            } else {
+                console.log('ScrollReveal not loaded');
+            }
+        })();
+    </script>
+</body>
+</html>

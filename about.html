@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- favicon / title -->
+    <link rel="shortcut icon" href="assets/img/logo 1.png" type="image/webp">
+    <title>About Us – Maan Electric Care (MEC)</title>
+
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== AOS (Animate On Scroll) ===============-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!--=============== MAIN CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <style>
+      /* ensure AOS doesn't override visibility before animation */
+[data-aos] {
+    pointer-events: auto;
+}
+
+[data-aos].aos-animate {
+    pointer-events: auto;
+}
+
+/* tiny tweak for the home overlay to keep it above dark layer */
+.home {
+    isolation: isolate;
+}
+
+.mission-grid{
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  gap:2rem;
+}
+
+.place__card{
+  position:relative;
+  overflow:hidden;
+  border-radius:12px;
+  height:350px;
+}
+
+.place__img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+.place__content{
+  position:absolute;
+  bottom:0;
+  left:0;
+  width:100%;
+  padding:1.5rem;
+  background:linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+}
+
+.place__title{
+  color:#fff;
+  font-size:1.5rem;
+  margin-bottom:0.5rem;
+}
+
+.place__subtitle{
+  color:#fff;
+  font-size:0.95rem;
+  line-height:1.4;
+}
+    </style>
+</head>
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo"><img src="assets/img/logo 1.png" alt="SKEC Logo"></a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="about.html" class="nav__link active-link">About</a></li>
+                    <li class="nav__item"><a href="services.html" class="nav__link">Services</a></li>
+                    <li class="nav__item"><a href="project.html" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+                </ul>
+
+                <div class="nav__dark">
+                    <span class="change-theme-name">Dark mode</span>
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
+                </div>
+
+                <i class="ri-close-line nav__close" id="nav-close"></i>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-function-line"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!--==================== HERO (internal banner with overlay) ====================-->
+        <section class="home" id="home" style="background-image: url('assets/img/sk.webp'); background-size: cover; background-position: center; position: relative;">
+            <div class="home__container container grid" style="position: relative; z-index: 5;">
+                <div class="home__data" data-aos="fade-up" data-aos-duration="1000">
+                    <span class="home__data-subtitle">WAPDA Approved Electrical Infrastructure Experts</span>
+                    <h1 class="home__data-title">About Our Company</h1>
+                </div>
+            </div>
+            <div style="position: absolute; top:0; left:0; width:100%; height:100%; background: rgba(0,0,0,0.5); z-index:1;"></div>
+        </section>
+
+       <!--==================== ABOUT SECTION ====================-->
+<section class="about section" id="about">
+    <div class="about__container container grid">
+
+        <div class="about__data" data-aos="fade-right">
+            <h2 class="section__title about__title">
+                About <br> Maan Electric Care
+            </h2>
+
+            <p class="about__description">
+                Maan Electric Care is a trusted electrical service provider delivering
+                professional installation, maintenance, and wiring solutions for
+                residential, commercial, and industrial projects. Our experienced
+                team focuses on safety, reliability, and high-quality workmanship
+                to ensure every electrical system operates efficiently and securely.
+            </p>
+
+            <a href="#contact" class="button">Work With Us</a>
+        </div>
+
+        <div class="about__img">
+            <div class="about__img-overlay">
+                <img src="assets/img/owner.webp" alt="Electrical work" class="about__img-one">
+            </div>
+
+            <div class="about__img-overlay">
+                <img src="assets/img/images.png" alt="Electrical services" class="about__img-two">
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!--==================== MISSION & VISION ====================-->
+<section class="section">
+<div class="container mission-grid">
+
+    <!-- Mission -->
+    <div class="place__card">
+        <img src="assets/img/team.webp" alt="Mission" class="place__img">
+
+        <div class="place__content">
+            <h3 class="place__title">Our Mission</h3>
+
+            <p class="place__subtitle">
+                To provide safe, reliable and high-quality electrical services
+                that help homes, businesses and industries operate efficiently.
+            </p>
+        </div>
+    </div>
+
+    <!-- Vision -->
+    <div class="place__card">
+        <img src="assets/img/sk.webp" alt="Vision" class="place__img">
+
+        <div class="place__content">
+            <h3 class="place__title">Our Vision</h3>
+
+            <p class="place__subtitle">
+                To become a trusted electrical service provider known for
+                professionalism, safety standards and customer satisfaction.
+            </p>
+        </div>
+    </div>
+
+</div>
+</section>
+
+
+<!--==================== SAFETY ====================-->
+<section class="section">
+<div class="container">
+
+<h2 class="section__title">Safety & Quality</h2>
+
+<div class="about__data" style="max-width:800px;margin:auto;">
+
+<ul style="list-style:none;padding:0;">
+
+<li style="margin-bottom:1rem;">
+<i class="ri-checkbox-circle-line"></i>
+Professional electrical installation standards
+</li>
+
+<li style="margin-bottom:1rem;">
+<i class="ri-checkbox-circle-line"></i>
+Experienced electricians and technicians
+</li>
+
+<li style="margin-bottom:1rem;">
+<i class="ri-checkbox-circle-line"></i>
+Safe wiring and certified electrical components
+</li>
+
+<li style="margin-bottom:1rem;">
+<i class="ri-checkbox-circle-line"></i>
+Regular inspection and maintenance services
+</li>
+
+<li style="margin-bottom:1rem;">
+<i class="ri-checkbox-circle-line"></i>
+Customer safety and satisfaction our top priority
+</li>
+
+</ul>
+
+</div>
+</div>
+</section>
+
+
+<!--==================== LEADERSHIP ====================-->
+<section class="section">
+<div class="container">
+
+<h2 class="section__title">Leadership</h2>
+
+<div style="display:flex;justify-content:center;">
+
+<div class="place__card" style="max-width:400px;">
+
+<img src="assets/img/owner1.webp" alt="Owner" class="place__img">
+
+<div class="place__content">
+
+<h3 class="place__title">Founder</h3>
+
+<span class="place__subtitle">
+Maan Electric Care
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!--==================== CTA ====================-->
+<section class="subscribe section" id="contact">
+<div class="subscribe__bg">
+
+<div class="subscribe__container container">
+
+<h2 class="section__title subscribe__title">
+Need Professional Electrical Services?
+</h2>
+
+<p class="subscribe__description">
+Contact Maan Electric Care for reliable electrical
+installation, maintenance and wiring solutions.
+</p>
+
+<a href="tel:03345051619" class="button">
+Call Now
+</a>
+
+</div>
+
+</div>
+</section>
+
+
+<!--==================== CERTIFICATIONS / PARTNERS ====================-->
+<section class="sponsor section">
+<div class="sponsor__container container grid">
+
+<div class="sponsor__content">
+<img src="assets/img/sponsors1.png" class="sponsor__img">
+</div>
+
+<div class="sponsor__content">
+<img src="assets/img/sponsors2.png" class="sponsor__img">
+</div>
+
+<div class="sponsor__content">
+<img src="assets/img/sponsors3.png" class="sponsor__img">
+</div>
+
+<div class="sponsor__content">
+<img src="assets/img/sponsors4.png" class="sponsor__img">
+</div>
+
+<div class="sponsor__content">
+<img src="assets/img/sponsors5.png" class="sponsor__img">
+</div>
+
+</div>
+</section>
+
+
+<!--==================== FOOTER ====================-->
+<footer class="footer section">
+
+<div class="footer__container container grid">
+
+<div class="footer__content grid">
+
+<!-- COMPANY -->
+<div class="footer__data">
+
+<h3 class="footer__title">Maan Electric Care</h3>
+
+<p class="footer__description">
+Professional Electrical Installation,
+Maintenance and Wiring Services.
+</p>
+
+<div>
+<a href="#" class="footer__social"><i class="ri-facebook-box-fill"></i></a>
+<a href="#" class="footer__social"><i class="ri-instagram-fill"></i></a>
+<a href="#" class="footer__social"><i class="ri-youtube-fill"></i></a>
+</div>
+
+</div>
+
+
+<!-- COMPANY LINKS -->
+<div class="footer__data">
+
+<h3 class="footer__subtitle">Company</h3>
+
+<ul>
+<li class="footer__item"><a href="about.html" class="footer__link">About Us</a></li>
+<li class="footer__item"><a href="index.html#services" class="footer__link">Services</a></li>
+<li class="footer__item"><a href="contact.html" class="footer__link">Contact</a></li>
+</ul>
+
+</div>
+
+
+<!-- SUPPORT -->
+<div class="footer__data">
+
+<h3 class="footer__subtitle">Support</h3>
+
+<ul>
+<li class="footer__item"><a href="contact.html" class="footer__link">Customer Support</a></li>
+<li class="footer__item"><a href="#" class="footer__link">Privacy Policy</a></li>
+</ul>
+
+</div>
+
+
+<!-- CONTACT -->
+<div class="footer__data">
+
+<h3 class="footer__subtitle">Contact</h3>
+
+<ul>
+<li class="footer__item">Pakistan</li>
+<li class="footer__item">0334 5051619</li>
+<li class="footer__item">0321 5177465</li>
+<li class="footer__item">khansheri28@gmail.com</li>
+</ul>
+
+</div>
+
+</div>
+
+
+<div class="footer__rights">
+
+<p class="footer__copy">
+&#169; 2025 Maan Electric Care. All rights reserved.
+</p>
+
+<div class="footer__terms">
+<a href="#" class="footer__terms-link">Terms</a>
+<a href="#" class="footer__terms-link">Privacy Policy</a>
+</div>
+
+</div>
+
+</div>
+</footer>
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line scrollup__icon"></i>
+    </a>
+
+    <!--=============== SCROLL REVEAL (we keep for possible use, but AOS is primary) ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== AOS INIT ===============-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!--=============== MAIN JS (keeps dark mode, etc.) ===============-->
+    <script src="assets/js/main.js"></script>
+
+    <!-- custom dark mode fix + AOS init -->
+    <script>
+        (function() {
+            // ---------- DARK MODE FIX (makes toggle work correctly) ----------
+            const themeButton = document.getElementById('theme-button');
+            const darkTheme = 'dark-theme';
+            
+            // Previously selected theme (if user selected)
+            const selectedTheme = localStorage.getItem('selected-theme');
+            const selectedIcon = localStorage.getItem('selected-icon');
+            
+            // Set initial state: light theme (no dark-theme class), moon icon (since it says "Dark mode")
+            if (selectedTheme) {
+                if (selectedTheme === 'dark') {
+                    document.body.classList.add(darkTheme);
+                } else {
+                    document.body.classList.remove(darkTheme);
+                }
+                if (selectedIcon === 'ri-sun-line') {
+                    themeButton.classList.add('ri-sun-line');
+                    themeButton.classList.remove('ri-moon-line');
+                } else {
+                    themeButton.classList.add('ri-moon-line');
+                    themeButton.classList.remove('ri-sun-line');
+                }
+            } else {
+                // No saved preference: default light theme, moon icon
+                document.body.classList.remove(darkTheme);
+                themeButton.classList.add('ri-moon-line');
+                themeButton.classList.remove('ri-sun-line');
+            }
+            
+            // Toggle theme function
+            themeButton.addEventListener('click', () => {
+                document.body.classList.toggle(darkTheme);
+                
+                if (document.body.classList.contains(darkTheme)) {
+                    themeButton.classList.add('ri-sun-line');
+                    themeButton.classList.remove('ri-moon-line');
+                } else {
+                    themeButton.classList.add('ri-moon-line');
+                    themeButton.classList.remove('ri-sun-line');
+                }
+                
+                // Save preferences
+                const currentTheme = document.body.classList.contains(darkTheme) ? 'dark' : 'light';
+                const currentIcon = themeButton.classList.contains('ri-moon-line') ? 'ri-moon-line' : 'ri-sun-line';
+                localStorage.setItem('selected-theme', currentTheme);
+                localStorage.setItem('selected-icon', currentIcon);
+            });
+
+            // ---------- AOS INIT ----------
+            AOS.init({
+                duration: 800,
+                easing: 'ease-out',
+                once: true,
+                mirror: false,
+                offset: 80,
+                delay: 0
+            });
+        })();
+    </script>
+</body>
+</html>

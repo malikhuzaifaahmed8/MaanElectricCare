@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon / title -->
+    <link rel="shortcut icon" href="assets/img/logo%201.png" type="image/webp">
+    <title>Maan Electric Care | Powering Pakistan</title>
+
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img src="assets/img/logo%201.png" alt="Maan Electric Care Logo" title="Maan Electric Care">
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link active-link">Home</a></li>
+                    <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="services.html" class="nav__link">Services</a></li>
+                    <li class="nav__item"><a href="project.html" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+                </ul>
+                <div class="nav__dark" id="theme-wrapper">
+                    <span class="change-theme-name">Dark mode</span>
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
+                </div>
+                <i class="ri-close-line nav__close" id="nav-close"></i>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- HOME -->
+        <section class="home" id="home">
+            <video id="videoMain" class="home__bg active" autoplay muted loop playsinline>
+                <source src="assets/video/Untitled%20design.mp4" type="video/mp4">
+            </video>
+            <video id="videoSecond" class="home__bg" autoplay muted loop playsinline>
+                <source src="assets/video/Untitled design (16).mp4" type="video/mp4">
+            </video>
+
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <span class="home__data-subtitle">Maan Electric Care – Trusted Since 2006</span>
+                    <h1 class="home__data-title">Government & <br> <b>WAPDA Approved</b> <br> Electrical Contractors</h1>
+                    <a href="project.html" class="button">Our Projects</a>
+                </div>
+
+                <div class="home__social">
+                    <a href="#" class="home__social-link"><i class="ri-facebook-box-fill"></i></a>
+                    <a href="#" class="home__social-link"><i class="ri-instagram-fill"></i></a>
+                    <a href="#" class="home__social-link"><i class="ri-twitter-fill"></i></a>
+                </div>
+
+                <div class="home__info" id="switchVideo">
+                    <div>
+                        <span class="home__info-title">Trusted Electrical Professionals</span>
+<span class="home__info-button">About Us</span>
+                    </div>
+                    <div class="home__info-overlay">
+                        <video id="videoPreview" autoplay muted loop playsinline class="home__info-video">
+                            <source src="assets/video/Untitled design.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="about section" id="about">
+            <div class="about__container container grid">
+                <div class="about__data">
+                    <h2 class="section__title about__title">Maan Electric Care <br> Shehzada Khan Electrical Contractors</h2>
+                    <p class="about__description">
+                        With over 18 years of hands-on experience in high‑voltage installations, transformer erection, and WAPDA infrastructure projects, we deliver safety‑compliant, government‑approved electrical solutions across Pakistan. From building contracts to industrial setups, we are your trusted partner.
+                    </p>
+                    <a href="about.html" class="button">View Details</a>
+                </div>
+
+                <div class="about__img">
+                    <div class="about__img-overlay">
+                        <img src="assets/img/owner.webp" alt="Maan Electric team" class="about__img-one">
+                    </div>
+                    <div class="about__img-overlay">
+                        <img src="assets/img/images.jpg" alt="WAPDA grid work" class="about__img-two">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+     <!-- SERVICES -->
+<section class="discover section" id="services">
+    <h2 class="section__title">Our Core <br> Electrical Services</h2>
+
+    <div class="discover__container container">
+        
+        <a href="services.html" class="discover__card">
+            <img src="assets/img/services (2).webp" alt="HT/LT Installation" class="discover__img">
+            <div class="discover__data">
+                <h2 class="discover__title" style="color: white;">HT/LT Lines</h2>
+                <span class="discover__description" style="color: white;">WAPDA approved</span>
+            </div>
+        </a>
+
+        <a href="services.html" class="discover__card">
+            <img src="assets/img/services (3).webp" alt="Transformer Installation" class="discover__img">
+            <div class="discover__data">
+                <h2 class="discover__title" style="color: white;">Transformers</h2>
+                <span class="discover__description" style="color: white;">Erection & commissioning</span>
+            </div>
+        </a>
+
+        <a href="services.html" class="discover__card">
+            <img src="assets/img/services (1).webp" alt="Panel Boards" class="discover__img">
+            <div class="discover__data">
+                <h2 class="discover__title" style="color: white;">Panel Boards</h2>
+                <span class="discover__description" style="color: white;">HT/LT switchgear</span>
+            </div>
+        </a>
+
+    </div>
+</section>
+
+        <!-- EXPERIENCE -->
+        <section class="experience section">
+            <h2 class="section__title">Trusted by Industry <br> & Government</h2>
+            <div class="experience__container container grid">
+                <div class="experience__content grid">
+                    <div class="experience__data">
+                        <h2 class="experience__number">18</h2>
+                        <span class="experience__description">Years <br> Experience</span>
+                    </div>
+                    <div class="experience__data">
+                        <h2 class="experience__number">85+</h2>
+                        <span class="experience__description">WAPDA <br> Projects</span>
+                    </div>
+                    <div class="experience__data">
+                        <h2 class="experience__number">120+</h2>
+                        <span class="experience__description">Industrial <br> Clients</span>
+                    </div>
+                </div>
+
+                <div class="experience__img grid">
+                    <div class="experience__overlay">
+                        <img src="assets/img/sk.webp" alt="Maan Electric team at site" class="experience__img-one">
+                    </div>
+                    <div class="experience__overlay">
+                        <img src="assets/img/logo%201.png" alt="High voltage work" class="experience__img-two">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VIDEO -->
+        <section class="video section">
+            <h2 class="section__title">See Our Work in Action</h2>
+            <div class="video__container container">
+                <p class="video__description">
+                    Watch how we execute complex electrical installations with precision, safety, and compliance — from transformer yards to building electrification.
+                </p>
+                <div class="video__content">
+                    <video id="video-file">
+                        <source src="assets/video/Untitled%20design%20(5).mp4" type="video/mp4">
+                    </video>
+                    <button class="button button--flex video__button" id="video-button">
+                        <i class="ri-play-line video__button-icon" id="video-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="place section" id="projects">
+            <h2 class="section__title">Recent & Ongoing <br> Projects</h2>
+            <div class="place__container container grid">
+                <a href="projects.html" class="place__card">
+                    <img src="assets/img/project%20(1).webp" alt="Grid station project" class="place__img">
+                    <div class="place__content">
+                        <span class="place__rating"><i class="ri-flashlight-line place__rating-icon"></i><span class="place__rating-number" style="color: white;">132 kV</span></span>
+                        <div class="place__data"><h3 class="place__title" style="color: white;">Faisalabad Grid</h3><span class="place__subtitle" style="color: white;">WAPDA - 132kV substation</span><span class="place__price" style="color: white;">Completed 2024</span></div>
+                    </div>
+                    <button class="button button--flex place__button"><i class="ri-arrow-right-line"></i></button>
+                </a>
+                <a href="projects.html" class="place__card">
+                    <img src="assets/img/project%20(2).webp" alt="Industrial wiring" class="place__img">
+                    <div class="place__content">
+                        <span class="place__rating"><i class="ri-flashlight-line place__rating-icon"></i><span class="place__rating-number" style="color: white;">11 kV</span></span>
+                        <div class="place__data"><h3 class="place__title" style="color: white;">Sundar Industrial</h3><span class="place__subtitle" style="color: white;">Lahore - panel installation</span><span class="place__price" style="color: white;">Ongoing</span></div>
+                    </div>
+                    <button class="button button--flex place__button"><i class="ri-arrow-right-line"></i></button>
+                </a>
+                <a href="projects.html" class="place__card">
+                    <img src="assets/img/project%20(3).webp" alt="Transformer yard" class="place__img">
+                    <div class="place__content">
+                        <span class="place__rating"><i class="ri-flashlight-line place__rating-icon"></i><span class="place__rating-number" style="color: white;">25 MVA</span></span>
+                        <div class="place__data"><h3 class="place__title" style="color: white;">Gujranwala Grid</h3><span class="place__subtitle" style="color: white;">transformer replacement</span><span class="place__price" style="color: white;">2023</span></div>
+                    </div>
+                    <button class="button button--flex place__button"><i class="ri-arrow-right-line"></i></button>
+                </a>
+                <a href="projects.html" class="place__card">
+                    <img src="assets/img/services%20(1).webp" alt="Building electrification" class="place__img">
+                    <div class="place__content">
+                        <span class="place__rating"><i class="ri-flashlight-line place__rating-icon"></i><span class="place__rating-number" style="color: white;">400V</span></span>
+                        <div class="place__data"><h3 class="place__title" style="color: white;">LDA Avenue</h3><span class="place__subtitle" style="color: white;">residential complex wiring</span><span class="place__price" style="color: white;">2024</span></div>
+                    </div>
+                    <button class="button button--flex place__button"><i class="ri-arrow-right-line"></i></button>
+                </a>
+                <a href="projects.html" class="place__card">
+                    <img src="assets/img/services%20(2).webp" alt="Cable laying" class="place__img">
+                    <div class="place__content">
+                        <span class="place__rating"><i class="ri-flashlight-line place__rating-icon"></i><span class="place__rating-number" style="color: white;">HT</span></span>
+                        <div class="place__data"><h3 class="place__title" style="color: white;">Steel Mill</h3><span class="place__subtitle" style="color: white;">underground cabling</span><span class="place__price" style="color: white;">Ongoing</span></div>
+                    </div>
+                    <button class="button button--flex place__button"><i class="ri-arrow-right-line"></i></button>
+                </a>
+            </div>
+        </section>
+
+        <!-- CONTACT / QUOTATION -->
+        <section class="subscribe section" id="contact">
+            <div class="subscribe__bg">
+                <div class="subscribe__container container">
+                    <h2 class="section__title subscribe__title">Request a <br> Free Quotation</h2>
+                    <p class="subscribe__description">
+                        Need a trusted electrical contractor for your WAPDA or industrial project? <br>
+                        <strong style="color: var(--title-color);">Call or WhatsApp us directly:</strong><br>
+                        <span style="font-size: 1.4rem; display: block; margin: 0.5rem 0;">
+                            <i class="ri-phone-line"></i> 0334 5051619  |  <i class="ri-whatsapp-line"></i> 0321 5177465
+                        </span>
+                        or send an email and get a reply within 24 hours.
+                    </p>
+                    <form action="#" class="subscribe__form">
+                        <input type="email" placeholder="Your email address" class="subscribe__input" required>
+                        <button class="button">Send Inquiry</button>
+                    </form>
+                    <div style="text-align: center; margin-top: 1.5rem;">
+                        <a href="contact.html" style="width: 170px ; margin-left: 20px;" class="button button--flex">Contact Us Directly</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SPONSORS -->
+        <section class="sponsor section">
+            <div class="sponsor__container container grid">
+                <div class="sponsor__content"><img src="assets/img/sponsors1.png" alt="WAPDA approved" class="sponsor__img"></div>
+                <div class="sponsor__content"><img src="assets/img/sponsors2.png" alt="PEC registered" class="sponsor__img"></div>
+                <div class="sponsor__content"><img src="assets/img/sponsors3.png" alt="ISO 45001" class="sponsor__img"></div>
+                <div class="sponsor__content"><img src="assets/img/sponsors4.png" alt="Pakistan Engineering Council" class="sponsor__img"></div>
+                <div class="sponsor__content"><img src="assets/img/sponsors5.png" alt="SEC registered" class="sponsor__img"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <div class="footer__content grid">
+                <div class="footer__data">
+                    <h3 class="footer__title">Maan Electric Care</h3>
+                    <p class="footer__description">WAPDA approved · Industrial & Infrastructure <br> Powering Pakistan with safety & excellence.</p>
+                    <div>
+                        <a href="https://www.facebook.com/" target="_blank" class="footer__social"><i class="ri-facebook-box-fill"></i></a>
+                        <a href="https://twitter.com/" target="_blank" class="footer__social"><i class="ri-twitter-fill"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank" class="footer__social"><i class="ri-instagram-fill"></i></a>
+                        <a href="https://www.youtube.com/" target="_blank" class="footer__social"><i class="ri-youtube-fill"></i></a>
+                    </div>
+                </div>
+                <div class="footer__data">
+                    <h3 class="footer__subtitle">Company</h3>
+                    <ul><li class="footer__item"><a href="about.html" class="footer__link">About Us</a></li><li class="footer__item"><a href="services.html" class="footer__link">Services</a></li><li class="footer__item"><a href="project.html" class="footer__link">Projects</a></li></ul>
+                </div>
+                <div class="footer__data">
+                    <h3 class="footer__subtitle">Support</h3>
+                    <ul><li class="footer__item"><a href="#" class="footer__link">FAQs</a></li><li class="footer__item"><a href="contact.html" class="footer__link">Contact</a></li><li class="footer__item"><a href="#" class="footer__link">Privacy Policy</a></li></ul>
+                </div>
+                <div class="footer__data">
+                    <h3 class="footer__subtitle">Contact</h3>
+                    <ul style="list-style: none; padding-left: 0;"><li class="footer__item"><i class="ri-map-pin-line"></i> Lahore, Pakistan</li><li class="footer__item"><i class="ri-phone-line"></i> 0334 5051619</li><li class="footer__item"><i class="ri-whatsapp-line"></i> 0321 5177465</li><li class="footer__item"><i class="ri-mail-line"></i> info@maanelectric.com.pk</li><li class="footer__item"><i class="ri-mail-line"></i> khansheri28@gmail.com</li></ul>
+                </div>
+            </div>
+            <div class="footer__rights">
+                <p class="footer__copy">&#169; 2025 Maan Electric Care (Shehzada Khan Electrical Contractors). All rights reserved.</p>
+                <div class="footer__terms"><a href="#" class="footer__terms-link">Terms & Agreements</a><a href="#" class="footer__terms-link">Privacy Policy</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCROLL UP -->
+    <a href="#" class="scrollup" id="scroll-up"><i class="ri-arrow-up-line scrollup__icon"></i></a>
+
+    <!--=============== SCRIPTS ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script>
+        (function() {
+            // ---------- DARK MODE ----------
+            const themeButton = document.getElementById('theme-button');
+            const themeWrapper = document.getElementById('theme-wrapper');
+            const darkTheme = 'dark-theme';
+            const iconMoon = 'ri-moon-line';
+            const iconSun = 'ri-sun-line';
+
+            const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light';
+            const getCurrentIcon = () => themeButton.classList.contains(iconMoon) ? 'moon' : 'sun';
+
+            const setDarkMode = (enable) => {
+                if (enable) {
+                    document.body.classList.add(darkTheme);
+                    themeButton.classList.replace(iconMoon, iconSun);
+                } else {
+                    document.body.classList.remove(darkTheme);
+                    themeButton.classList.replace(iconSun, iconMoon);
+                }
+            };
+
+            // Check local storage
+            const selectedTheme = localStorage.getItem('selected-theme');
+            if (selectedTheme) {
+                setDarkMode(selectedTheme === 'dark');
+            } else {
+                // default light
+                setDarkMode(false);
+            }
+
+            themeWrapper.addEventListener('click', () => {
+                const isDark = document.body.classList.contains(darkTheme);
+                setDarkMode(!isDark);
+                localStorage.setItem('selected-theme', getCurrentTheme());
+                localStorage.setItem('selected-icon', getCurrentIcon());
+            });
+
+            // ---------- MOBILE MENU + SCROLL HEADER ----------
+            const header = document.getElementById('header');
+            const navMenu = document.getElementById('nav-menu');
+            const navToggle = document.getElementById('nav-toggle');
+            const navClose = document.getElementById('nav-close');
+
+            window.addEventListener('scroll', () => {
+                if (window.scrollY >= 40) header.classList.add('scroll-header');
+                else header.classList.remove('scroll-header');
+            });
+
+            if (navToggle) {
+                navToggle.addEventListener('click', () => navMenu.classList.add('show-menu'));
+            }
+            if (navClose) {
+                navClose.addEventListener('click', () => navMenu.classList.remove('show-menu'));
+            }
+            const navLinks = document.querySelectorAll('.nav__link');
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => navMenu.classList.remove('show-menu'));
+            });
+
+            // ---------- HOME VIDEO SWITCH ----------
+            const switchBtn = document.getElementById('switchVideo');
+            const videoMain = document.getElementById('videoMain');
+            const videoSecond = document.getElementById('videoSecond');
+            if (switchBtn && videoMain && videoSecond) {
+                switchBtn.addEventListener('click', () => {
+                    if (videoMain.classList.contains('active')) {
+                        videoMain.classList.remove('active');
+                        videoSecond.classList.add('active');
+                    } else {
+                        videoSecond.classList.remove('active');
+                        videoMain.classList.add('active');
+                    }
+                });
+            }
+
+            // ---------- VIDEO BUTTON (play/pause) ----------
+            const videoFile = document.getElementById('video-file');
+            const videoButton = document.getElementById('video-button');
+            const videoIcon = document.getElementById('video-icon');
+            if (videoButton && videoFile) {
+                videoButton.addEventListener('click', () => {
+                    if (videoFile.paused) {
+                        videoFile.play();
+                        videoIcon.classList.replace('ri-play-line', 'ri-pause-line');
+                    } else {
+                        videoFile.pause();
+                        videoIcon.classList.replace('ri-pause-line', 'ri-play-line');
+                    }
+                });
+            }
+
+            // ---------- SCROLL UP ----------
+            const scrollUp = document.getElementById('scroll-up');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY >= 560) scrollUp.classList.add('show-scroll');
+                else scrollUp.classList.remove('show-scroll');
+            });
+
+            // ---------- SWIPER ----------
+            if (typeof Swiper !== 'undefined') {
+                new Swiper('.discover__container', {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                    loop: true,
+                    breakpoints: {
+                        320: { slidesPerView: 1, spaceBetween: 20 },
+                        568: { slidesPerView: 2, spaceBetween: 30 },
+                        768: { slidesPerView: 3, spaceBetween: 30 },
+                    }
+                });
+            }
+
+            // ---------- SCROLL REVEAL ----------
+            if (typeof ScrollReveal !== 'undefined') {
+                const sr = ScrollReveal({ origin: 'top', distance: '60px', duration: 2000, delay: 300 });
+                sr.reveal('.home__data, .about__data, .experience__content, .video__container');
+                sr.reveal('.home__info', { delay: 500, origin: 'bottom' });
+                sr.reveal('.discover__card, .place__card, .sponsor__content', { interval: 100 });
+            }
+        })();
+    </script>
+</body>
+</html>
